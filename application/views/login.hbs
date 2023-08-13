@@ -1,0 +1,35 @@
+<header>
+
+    <h1>Login Page</h1>
+
+</header>
+
+
+
+<fieldset id="fieldset-login">
+
+    <p class="alternate-p">Welcome back! Please login to experience more awesomeness!</p>
+    <br>
+
+    <form method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
+
+        <label for="username">Username</label>
+
+        <input type="text" id="username" name="username" required name="username">
+        <br /> <br />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required name="password">
+        <br /> <br />
+
+        <button type="submit">Login</button>
+
+        <br /> <br />
+
+        <p>Not a member?</p>
+        <a href="/registration">Create an account here!</a>
+
+
+    </form>
+
+</fieldset>

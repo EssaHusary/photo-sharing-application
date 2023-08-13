@@ -1,0 +1,55 @@
+<header>
+
+    <h1>Registration Page</h1>
+
+</header>
+
+
+<fieldset>
+
+    <p>Sign up here! Please enter the necessary information to create your account!</p>
+    <br>
+
+
+    <form method="post" action="/users/registration" enctype="application/x-www-form-urlencoded">
+
+        <label for="username">Username</label>
+        <input type="text" id="username"  required name="username">
+        <br /> <br />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required name="email">
+        <br /> <br />
+
+        <label for="password">Password</label>
+        <input type="password" id="password1"  required name="password">
+        <br /> <br />
+
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" id="password2"  required name="cpassword">
+        <br /> <br />
+
+        <label for="AgeConfirmation">By clicking, I am confirming that I'm at
+            least 13+ years of age
+        </label>
+        <input type="checkbox" id="checkbox1" name="checkbox" required="">
+        <br /> <br />
+
+        <label for="Agreements">By clicking, I am confirming that I've read
+            and that I accept the <a href="TOSandPrivacy"> TOS and Privacy Rules
+            </a>
+        </label>
+        <input type="checkbox" id="checkbox2" name="checkbox" required="">
+        <br /> <br />
+
+        <button id="button" type="submit">Register</button>
+
+        <br /> <br />
+
+        <p>Already a member?</p>
+        <a href="/login">Login here!</a>
+
+
+    </form>
+
+</fieldset>

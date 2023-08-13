@@ -1,0 +1,42 @@
+<header>
+
+    <h1>Post Your Image</h1>
+
+</header>
+
+
+<fieldset id="fieldset-post">
+
+    <p class="alternate-p">Post an image to the Awesomeness.com community page here!</p>
+    <br>
+
+    <form method="POST" enctype="multipart/form-data" action='/posts/createPost'>
+
+        <label for="PostTitle">Post Title</label>
+        <input type="text" id="PostTitle" name="title" required />
+        <br /> <br />
+
+        <label for="PostDescription">Post Description</label>
+        <input type="text" id="PostDescription" name="description" required />
+        <br /> <br />
+
+        <label for="image">Select an image to upload</label>
+        <input type="file" id="file" name="uploadImage">
+        <br /> <br />
+
+        <label for="Agreements">By clicking, I am confirming that I've read and
+            that I accept the <a href="AcceptableUsePolicy">
+                Acceptable Use Policy</a>
+        </label>
+        <input type="checkbox" id="checkbox" name="checkbox" required />
+        <br /> <br />
+
+        <button type="submit">Post Image</button>
+
+        <br /> <br />
+
+
+
+    </form>
+
+</fieldset>

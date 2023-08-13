@@ -1,0 +1,674 @@
+a {
+
+    border-style: solid;
+    border-color:black;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+
+.alternate-p {
+    
+    margin-top: 80px;
+
+}
+
+
+
+.anchor-buttons{
+
+    padding-left: 65px;
+
+}
+
+
+
+.author-text{
+
+    grid-area: author;
+    justify-self: start;
+    color: blue;
+
+}
+
+
+
+.banner {
+
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: orange;
+    grid-area: 1 / 1 / 1 / 10;
+    border-radius: 0%;
+
+}
+
+
+
+.banner-h1 {
+
+    color:rgba(2, 204, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+
+}
+
+
+
+.card{
+
+    display: grid;
+    grid-area: auto;
+    grid-template-rows: auto;
+    grid-template-columns: auto minmax(0,1fr);
+    border-radius: 0%;
+    border-color:  rgb(2, 204, 255);
+
+}
+
+
+
+.card-body{
+
+    grid-area: auto;
+    border-radius: 0%;
+    border-color:  rgb(2, 204, 255);
+
+}
+
+
+
+.card-image{
+
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+
+
+#comment-box{
+
+    padding: .20rem;
+    display: flex;
+    background-color: orange;
+    grid-area: comment-box;
+    border-radius: 0%;
+    border-color: rgb(2, 204, 255);
+
+}
+
+
+
+#comment-box-button{
+
+    padding: .25rem;
+    margin: .25rem;
+    line-height: 2;
+    background-color: white;
+    color: orange;
+    font-size: 1.5rem;
+    border: 0.0625rem solid rgb(2, 204, 255);
+    border-radius: 0%;
+    cursor: pointer;
+
+}
+
+
+
+#comment-box-text{
+
+    flex-grow: 8;
+    padding: .25rem;
+    margin: .25rem;
+    border: 0.0625rem solid rgb(2, 204, 255);
+    background-color: white;
+    resize: none;
+    
+}
+
+
+
+#comment-container{
+
+    display: grid;
+    justify-self: stretch;
+    grid-area: comments;
+    grid-template-rows: auto 75px;
+    grid-template-columns: 1fr;
+    gap: .2rem;
+    grid-template-areas: 
+    "messages"
+    "comment-box";
+    max-height: 80vh;
+    border-radius: 0%;
+
+}
+
+
+
+.comment-text{
+
+    grid-area: comment;
+    justify-self: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 60px;
+    min-height: 60px;
+    border-radius: 0%;
+    border: none;
+
+}
+
+
+
+/* What you see in this "#container", is some CSS for the cards made in assignment 4. It was imported early on in this term project */
+
+/* #container {
+
+
+    height: auto;
+    width: auto;
+    
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: .25em;
+    margin: 4px;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}  */
+
+
+
+.date-posted {
+
+    grid-area: created;
+    justify-self: end;
+
+}
+
+
+
+
+div {
+
+    background-color: rgb(0, 0, 0, 0.75);
+    border-radius: 30px;
+    border-style: solid;
+    border-color: white;
+    grid-area: 3 / 2 / 3 / 5;
+
+    
+}
+
+
+
+div[id=post-info] > p {
+
+    margin-bottom: .2em;
+    color: rgb(2, 204, 255);
+
+}
+
+
+
+div[id^=message-]{
+
+    display: grid;
+    grid-template-rows: .3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: .2rem;
+    padding: .25rem;
+    margin: .2rem;
+    font-size: 1rem;
+    border: 0.0625rem solid orange;
+    border-radius: 0%;
+    grid-template-areas: 
+    "author created"
+    "comment comment";
+
+}
+
+
+
+div[post-container] > div[id^=post-] {
+
+    flex-grow: 0;
+    flex-shrink: 1;
+
+}
+
+
+
+div[post-container] > imd[id^=post-] {
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+
+
+fieldset{
+
+    grid-area: 6 / 2 / 22 / 9;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0, 0.75);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+}
+
+
+
+#fieldset-login{
+
+    grid-area: 6 / 2 / 19 / 9;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0, 0.75);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: rgba(2, 204, 255);
+
+}
+
+
+
+#fieldset-post{
+
+    grid-area: 6 / 2 / 19 / 9;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0, 0.75);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: rgba(2, 204, 255);
+
+}
+
+
+
+#file{
+
+    color: orange;
+
+}
+
+
+
+#flash-message {
+
+    position: fixed;
+    left: 50%;
+    top: 12.5%;
+    transform: translate(-50%,0);
+    color:rgba(2, 204, 255);
+    border-radius: 0%;
+    border-color: orange;
+    z-index: 9999;
+
+}
+
+
+
+#flash-message div {
+
+    text-align: center;
+    border-radius: 0%;
+    border-color: orange;
+    height: 30px;
+
+}
+
+
+
+#footer {
+
+    grid-area: 24 / 1 / 26 / 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: orange;
+    border-radius: 0%;
+    height: 30px;
+
+}
+
+
+
+#footer-p {
+
+    margin-top: 5px;
+    color: orange;
+
+}
+
+
+
+form {
+
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+.grid-container {
+
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+
+}
+
+
+
+#grid-container {
+
+    display: grid;
+    height: 80vh;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+
+}
+
+
+
+h1 {
+
+    color: white;
+
+}
+
+
+
+header {
+
+    color:orange;
+    text-align: center;
+    grid-area: 5 / 2 / 5 / 9;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
+}
+
+
+
+html {
+
+    background-image: url(https://th.bing.com/th/id/R.9799d5af25e2000411a0dc6672f2c02e?rik=yLnyf8OlfApCrQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f10%2fBackgrounds-Blue-and-orange-light.jpg&ehk=u4Lm7bvgp250kjmP7zs2Bs2ckNK6ng9pIBkjgCog7OI%3d&risl=&pid=ImgRaw&r=0);
+
+}
+
+
+
+label {
+
+    display: inline-block;
+    padding: 2px;
+    color: rgb(2, 204, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+
+#li-login{
+
+    margin-right: 70px;
+
+}
+
+
+
+#li-post{
+
+    margin-right: 70px;
+
+}
+
+
+
+#main-content{
+
+    display: grid;
+    grid-area: 3 / 1 / 24 / 10;
+    gap: .2rem .2rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 0%;
+    border-color:  orange;
+
+}
+
+
+
+#messages{
+
+    grid-area: messages;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    scroll-behavior: smooth;
+    border: 1px solid rgb(2, 204, 255);
+    box-shadow: -2px 2px 4px 4px rgb(2, 204, 255);
+    border-radius: 0%;
+    color: white;
+
+}
+
+
+
+nav {
+
+    grid-area: 2 / 1 / 2 / 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-color: orange;
+    border-radius: 0%;
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+    float: left;
+
+}
+
+
+
+nav ul li {
+
+    display: inline-block;   
+
+}
+
+
+
+p {
+
+    text-align: center;
+    color: orange;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+#p-index{
+    
+    color: orange;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+
+
+#p-login{
+
+    color: orange;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+
+
+#p-post {
+
+    color: orange;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+
+
+#photo-{
+
+    display: grid;
+    margin: .2rem;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr .3fr;
+    grid-template-areas: "photo" "title";
+    border: 1px solid white;
+    box-shadow: 0 2px 10px orange;
+
+}
+
+
+
+#photo-container{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: photoinfo;
+    border-radius: 0%;
+    border-color: orange;
+
+}
+
+
+
+#post-container{
+
+    grid-area: 5 / 1 / 24 / 10;
+    padding-top: .35em;
+    padding-bottom: .35em;
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "photoinfo comments"
+    "photoinfo comments";
+    border-radius: 0%;
+    border-color: orange;
+
+}
+
+
+
+#post-description{
+
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0%;
+    border-color: orange;
+    color: rgb(2, 204, 255);
+    text-align: center;
+    font-size: large;
+
+}
+
+
+
+#post-image{
+
+    max-height: 455px;
+    max-width: 900px;
+
+}
+
+
+
+#post-info{
+
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0%;
+    border-color: orange;
+    color: rgb(2, 204, 255);
+
+}
+
+
+
+#post-title{
+
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0%;
+    border-color: orange;
+    color: rgb(2, 204, 255);
+    text-align: center;
+    font-size: larger;
+
+}
+
+
+
+#search-button {
+    
+    margin-left: 0px;
+    margin-right: 100px;
+
+}
+
+
+
+#search-text {
+
+    width: 1050px;
+    margin-left: 70px;
+    margin-right: 0px;
+
+}
+
+
+
+section {
+
+    text-align:left;
+    color: rgb(2, 204, 255);
+    padding: -10px;
+    padding-left: 70px;
+    display: inline-block;
+
+}
+
+
+
+textarea {
+
+    display: inline-block;   
+
+}
+
+
+
+.viewpost-header {
+
+    grid-area: 5 / 2 / 5 / 9;
+    margin: -70px;
+
+}

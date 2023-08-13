@@ -1,0 +1,24 @@
+<nav>
+        <ul>
+            <li>
+                <a href="/"><p id="p-index">Home</p></a>
+            </li>
+            
+            <li><input type="text" id="search-text" name="search-bar" placeholder="Use this search bar here to search for a post!"></li>
+            <li><button id="search-button" type="submit">Search</button></li>
+            
+    
+            <li id="li-post"><a href="/postimage"><p id="p-post">Post</p></a></li>
+            <li id="li-login">
+                
+                {{#if logged}}
+                <a id="logout-button"><p id="p-login">Logout</p></a>
+                {{else}}
+                <a href="/login"><p id="p-login">Login</p></a>
+                {{/if}}
+                
+            </li>
+    
+        </ul>
+    
+</nav>
