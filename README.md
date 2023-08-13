@@ -20,8 +20,7 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Build Instructions
 1. npm install
-2. steps here
+
 
 ## Run Instructions
 1. npm start  (type URL "localhost:3000" in browser)
-2. steps here 
