@@ -1,19 +1,10 @@
-# CSC 317 Term Project
+# Photo Sharing Application
 
-## Purpose
+This project is a photo sharing application that allows users to share photos and add comments to other users’ photos. 
 
-The purpose of this repository is to store all the code for your web application. This also includes the history of all commits made and who made them. Only code submitted on the master branch will be graded.
+From a developer’s perspective, handlebars were key in having clean templates for frontend views such as logging in, logging out, and posting photos and comments. It was the easier way of templating at the time I wrote this application. I used MySQL as it made the most sense, having comments and posts associated with each user.
 
-Please follow the instructions below and fill in the information requested when prompted.
-
-## Student Information
-
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Essa Husary     |
-| Student ID    | 917014896       |
-| Student Email | ehusary2@mail.sfsu.edu    |
-
+From the user’s perspective, they are prompted with a simple login screen, and once they login, they can see the most recent photos posted on the app. They can click on these posts and write comments. They can also search for posts in the search bar, in the case where some posts are not recent.
 
 
 # Build/Run Instructions
